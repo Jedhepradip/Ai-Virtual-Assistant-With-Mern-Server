@@ -20,6 +20,7 @@ export const GetCurrentUser = async (req: Request, res: Response): Promise<Respo
             message: "User fetched successfully",
             user,
         });
+        
     } catch (error: any) {
         console.error("GetCurrentUser Error:", error.message);
         return res.status(500).json({
